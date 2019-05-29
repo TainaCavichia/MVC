@@ -3,17 +3,29 @@ using Microsoft.AspNetCore.Http;
 using hamburgueriaMVC.Models;
 using System;
 using hamburgueriaMVC.Repositorios;
+using hamburgueriaMVC.ViewModels;
 
 namespace hamburgueriaMVC.Controllers
 {
     public class PedidoController : Controller
     {
         PedidoRepositorio pedidoRepositorio = new PedidoRepositorio();
+
+        HamburguerRepositorio hamburguerRepositorio = new HamburguerRepositorio();
+
+        ShakeRepositorio shakeRepositorio = new ShakeRepositorio();
         
         [HttpGet]
         public IActionResult Index()
         {
-            return View(); 
+            var hamburgueres = hamburguerRepositorio.Listar();
+            var shakes = shakeRepositorio.Listar();
+
+            PedidoViewModel pedido = new PedidoViewModel();
+            pedido.Hamburgueres = hamburgueres;
+            pedido.Shakes = shakes;
+
+            return View(pedido); 
         }   
         [HttpPost]
         public IActionResult RegistrarPedido(IFormCollection form)
@@ -38,16 +50,18 @@ namespace hamburgueriaMVC.Controllers
 
             //INSTANCIAR OBJETO - geração de construtor
             Hamburguer hamburguer = new Hamburguer(
-                Nome: form["hamburguer"]
+                Nome: form["hamburguer"],
+                Preco: hamburguerRepositorio.ObterPrecoDe(form["hamburguer"])
             );
             pedido.Hamburguer = hamburguer;
 
             //INSTANCIAR OBJETO - resumo da forma 1
             Shake shake = new Shake(){
-                Nome = form["shake"]  
+                Nome = form["shake"],
+                Preco = shakeRepositorio.ObterPrecoDe(form["shake"])
             };
             pedido.Shake = shake;
-
+            pedido.PrecoTotal = pedido.Hamburguer.Preco + pedido.Shake.Preco;
             pedido.DataPedido = DateTime.Now;
 
             pedidoRepositorio.Inserir(pedido);

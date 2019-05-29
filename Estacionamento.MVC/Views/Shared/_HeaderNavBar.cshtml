@@ -1,0 +1,10 @@
+﻿<nav>
+        <div class="section-container">
+            <ul>
+                 <li><a asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+                 <li><a href='@Url.Action("Index", "Home")#formulario'>Cadastro</a></li>
+                 <li><a href='@Url.Action("Index", "Home")#footer'>Contato</a></li>
+                 <li><a id="bt-historico" asp-controller="Historico" asp-action="Index">Histórico</a></li>             
+            </ul>
+        </div>
+</nav>

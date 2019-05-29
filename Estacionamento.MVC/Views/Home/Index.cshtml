@@ -1,0 +1,58 @@
+﻿@model Estacionamento.MVC.Models.RegistroModel
+
+<header>
+    @{
+        Html.RenderPartial("_HeaderNavBar");
+    }
+
+<h1>Bem vindo ao Tsukar</h1>
+
+</header>
+
+<form id="#formulario" action="Carro/Cadastrar" method="POST">
+    <label>
+        Nome
+        <input type="text" name="nome">
+    </label>
+    <label>
+        Marca do carro
+        <input type="text" name="marca">
+    </label>
+    <label>
+        Modelo do carro
+        <input type="text" name="modelo">
+    </label>
+    <label>
+        Placa do carro
+        <input type="text" name="placa">
+    </label>
+    <label>
+        Data Entrada
+        <input type="date" name="dataDeEntrada">
+    </label>
+
+    <div class="double-field">
+        <div>
+            <label for="marca">Marca</label>
+            <select id="marca" name="marca" required>
+                <option value="" disabled selected>Selecione</option>
+                @foreach (var marca in Model.MarcaModel)
+                {
+                    <option value="@marca.Marca">@marca.Marca</option>
+                }
+            </select>
+        </div>
+        <div>
+            <label for="modelo">Modelo</label>
+            <select id="modelo" name="modelo">
+                <option value="" disabled selected>Selecione</option>
+                @foreach (var modelo in Model.ModeloModel)
+                {
+                    <option value="@modelo.Modelo">@modelo.Modelo</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <input type="submit" value="Cadastrar">
+</form>

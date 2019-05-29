@@ -1,0 +1,12 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+ nav {
+    background-color:  black; 
+} 
+nav a{
+    color: white; 
+}
