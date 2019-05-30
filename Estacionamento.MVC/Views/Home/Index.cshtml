@@ -1,4 +1,4 @@
-﻿@model Estacionamento.MVC.Models.RegistroModel
+﻿@model Estacionamento.MVC.ViewModel.RegistroViewModel
 
 <header>
     @{
@@ -30,13 +30,12 @@
         Data Entrada
         <input type="date" name="dataDeEntrada">
     </label>
-
     <div class="double-field">
         <div>
             <label for="marca">Marca</label>
             <select id="marca" name="marca" required>
                 <option value="" disabled selected>Selecione</option>
-                @foreach (var marca in Model.MarcaModel)
+                @foreach (var marca in Model.Marcas)
                 {
                     <option value="@marca.Marca">@marca.Marca</option>
                 }
@@ -46,13 +45,12 @@
             <label for="modelo">Modelo</label>
             <select id="modelo" name="modelo">
                 <option value="" disabled selected>Selecione</option>
-                @foreach (var modelo in Model.ModeloModel)
+                @foreach (var modelo in Model.Modelos)
                 {
                     <option value="@modelo.Modelo">@modelo.Modelo</option>
                 }
             </select>
         </div>
     </div>
-
     <input type="submit" value="Cadastrar">
 </form>

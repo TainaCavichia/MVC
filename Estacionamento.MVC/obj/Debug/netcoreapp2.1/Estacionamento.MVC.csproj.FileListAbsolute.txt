@@ -15,7 +15,6 @@ C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionament
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Estacionamento.MVC.TagHelpers.output.cache
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Estacionamento.MVC.RazorCoreGenerate.cache
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Historico\Index.g.cshtml.cs
-C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs

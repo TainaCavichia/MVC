@@ -58,7 +58,7 @@ using Estacionamento.MVC.Models;
             WriteLiteral("<nav>\r\n        <div class=\"section-container\">\r\n            <ul>\r\n                 <li>");
             EndContext();
             BeginContext(87, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "461ac47b215f488c909bbf9b789ab605", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8dcb29c5905b4ff4b1443fa5dfc7a572", async() => {
                 BeginContext(146, 9, true);
                 WriteLiteral("Principal");
                 EndContext();
@@ -105,7 +105,7 @@ WriteAttributeValue("", 286, Url.Action("Index", "Home"), 286, 28, false);
             WriteLiteral(">Contato</a></li>\r\n                 <li>");
             EndContext();
             BeginContext(362, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "948ed99af2674772909675a7028d7754", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf9947b7b8674f2f87b289d410334f32", async() => {
                 BeginContext(429, 9, true);
                 WriteLiteral("Histórico");
                 EndContext();

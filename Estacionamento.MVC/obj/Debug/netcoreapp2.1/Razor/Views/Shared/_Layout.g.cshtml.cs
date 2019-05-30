@@ -55,7 +55,7 @@ using Estacionamento.MVC.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"pt-br\">\r\n");
             EndContext();
             BeginContext(38, 150, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff7d1aa52b504ea4a99a4c4ab0355b3d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38832586aa0448109077c9febe0b9fbd", async() => {
                 BeginContext(44, 137, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <title>Agora Var - Tsukar</title>\r\n    <link href=\"~css/site.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
                 EndContext();
@@ -75,7 +75,7 @@ using Estacionamento.MVC.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(190, 432, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc8db2476f5a42878558435826cc2023", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1970ed24c464463a750141a64be03a5", async() => {
                 BeginContext(219, 9, true);
                 WriteLiteral("\r\n\r\n     ");
                 EndContext();

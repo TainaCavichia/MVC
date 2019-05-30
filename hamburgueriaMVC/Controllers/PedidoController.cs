@@ -54,6 +54,7 @@ namespace hamburgueriaMVC.Controllers
                 Preco: hamburguerRepositorio.ObterPrecoDe(form["hamburguer"])
             );
             pedido.Hamburguer = hamburguer;
+            
 
             //INSTANCIAR OBJETO - resumo da forma 1
             Shake shake = new Shake(){
