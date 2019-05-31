@@ -1,0 +1,22 @@
+@model Estacionamento.MVC.ViewModel.RegistroViewModel
+
+@{
+        Html.RenderPartial("_HeaderNavBar");
+    }
+    
+<h2>Listagem</h2>
+
+<section class="listagem">
+
+@foreach (var item in Model.Registros)
+{   
+<br>
+<p>------------------------------------------------------------------</p>
+<p>Nome do Motorista: @item.Nome</p>
+<p>Marca do carro: @item.Marca</p>
+<p>Modelo do carro: @item.Modelo</p>
+<p>Placa do carro: @item.Placa</p>
+<p>Data de Entrada: @item.DataDeEntrada</p>
+<p>------------------------------------------------------------------</p>
+}
+</section>

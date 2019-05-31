@@ -8,7 +8,7 @@ namespace Estacionamento.MVC.Repositorio
     {
         private const string PATH = "DataBase/Marcas.csv";
 
-        private List<MarcaModel> Marcas = new List<MarcaModel>();
+        private List<MarcaModel> listaDeMarcas = new List<MarcaModel>();
 
         public List<MarcaModel> Listar()
         {
@@ -20,9 +20,9 @@ namespace Estacionamento.MVC.Repositorio
                 marca.Id = int.Parse(valores[0]);
                 marca.Marca = valores[1];
 
-                this.Marcas.Add(marca);
+                listaDeMarcas.Add(marca);
             }
-            return this.Marcas;
+            return listaDeMarcas;
         }
     }
 }

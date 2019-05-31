@@ -1,36 +1,31 @@
 ﻿@model Estacionamento.MVC.ViewModel.RegistroViewModel
 
-<header>
     @{
         Html.RenderPartial("_HeaderNavBar");
     }
 
+<main>
 <h1>Bem vindo ao Tsukar</h1>
 
-</header>
-
-<form id="#formulario" action="Carro/Cadastrar" method="POST">
+<form id="#formulario" action="Registro/Registrar" method="POST">
     <label>
         Nome
         <input type="text" name="nome">
     </label>
-    <label>
-        Marca do carro
-        <input type="text" name="marca">
-    </label>
-    <label>
-        Modelo do carro
-        <input type="text" name="modelo">
-    </label>
+    <br>
+    <br>
     <label>
         Placa do carro
         <input type="text" name="placa">
     </label>
+    <br>
+    <br>
     <label>
         Data Entrada
         <input type="date" name="dataDeEntrada">
     </label>
     <div class="double-field">
+    <br>
         <div>
             <label for="marca">Marca</label>
             <select id="marca" name="marca" required>
@@ -42,6 +37,7 @@
             </select>
         </div>
         <div>
+    <br>
             <label for="modelo">Modelo</label>
             <select id="modelo" name="modelo">
                 <option value="" disabled selected>Selecione</option>
@@ -52,5 +48,7 @@
             </select>
         </div>
     </div>
+    <br>
     <input type="submit" value="Cadastrar">
 </form>
+</main>

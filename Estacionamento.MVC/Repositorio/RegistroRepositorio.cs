@@ -14,8 +14,8 @@ namespace Estacionamento.MVC.Repositorio
 
                 registro.Id = 1;
             }
-            StreamWriter sw = new StreamWriter ("Registros.csv", true);
-            sw.WriteLine ($"{registro.Id};{registro.Nome};{registro.Marca};{registro.Modelo};{registro.DataDeEntrada}");
+            StreamWriter sw = new StreamWriter ("DataBase/Registros.csv", true);
+            sw.WriteLine ($"{registro.Id};{registro.Nome};{registro.Marca};{registro.Modelo};{registro.Placa};{registro.DataDeEntrada}");
             sw.Close ();
 
             return registro;
@@ -23,23 +23,23 @@ namespace Estacionamento.MVC.Repositorio
         public List<RegistroModel> Listar () {
             List<RegistroModel> listaDeRegistros = new List<RegistroModel> ();
 
-            string[] linhas = File.ReadAllLines ("Registros.csv");
-            RegistroModel registro;
+            string[] linhas = File.ReadAllLines ("DataBase/Registros.csv");
             foreach (var item in linhas) {
                 if (string.IsNullOrEmpty (item)) {
                     //retorna para o foreach
                     continue;
                 }
                 string[] linha = item.Split (";");
-                registro = new RegistroModel (
-                    id: int.Parse (linha[0]),
-                    nome: linha[1],
-                    marca: linha[2],
-                    modelo: linha[3],
-                    placa: linha[4],
-                    dataDeEntrada: DateTime.Parse (linha[4])
-                );
-                listaDeRegistros.Add (registro);
+                var registroRecuperado = new RegistroModel();
+
+                registroRecuperado.Id = int.Parse(linha[0]);
+                registroRecuperado.Nome = linha[1];
+                registroRecuperado.Marca = linha[2];
+                registroRecuperado.Modelo = linha[3];
+                registroRecuperado.Placa = linha[4];
+                registroRecuperado.DataDeEntrada = DateTime.Parse (linha[5]);
+
+                listaDeRegistros.Add (registroRecuperado);
             }
             return listaDeRegistros;
         }

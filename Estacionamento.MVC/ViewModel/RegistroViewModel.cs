@@ -7,5 +7,6 @@ namespace Estacionamento.MVC.ViewModel
     {
         public List<MarcaModel> Marcas {get;set;}
         public List<ModeloModel> Modelos {get;set;}
+        public List<RegistroModel> Registros {get;set;}
     }
 }
