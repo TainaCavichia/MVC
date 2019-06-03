@@ -69,7 +69,7 @@ using Estacionamento.MVC.Models;
             WriteLiteral("\r\n<main>\r\n<h1>Bem vindo ao Tsukar</h1>\r\n\r\n");
             EndContext();
             BeginContext(160, 1288, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "302749531fdf4974bfd5e7ba3961521e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e4ccea394c64cc8a97c64359cab9004", async() => {
                 BeginContext(225, 490, true);
                 WriteLiteral(@"
     <label>
@@ -96,7 +96,7 @@ using Estacionamento.MVC.Models;
                 ");
                 EndContext();
                 BeginContext(715, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "61601cf32038420fae328d7d17c08f45", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de40cd0674dd4294a1c3769150af0695", async() => {
                     BeginContext(750, 9, true);
                     WriteLiteral("Selecione");
                     EndContext();
@@ -133,7 +133,7 @@ using Estacionamento.MVC.Models;
                 WriteLiteral("                    ");
                 EndContext();
                 BeginContext(863, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43333a66c8ea43c49ec23aea9bfbec33", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d634b232ea8246df81d87190b1fe7c08", async() => {
                     BeginContext(893, 11, false);
 #line 35 "C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\Views\Registro\Index.cshtml"
                                             Write(marca.Marca);
@@ -174,7 +174,7 @@ using Estacionamento.MVC.Models;
                 WriteLiteral("            </select>\r\n        </div>\r\n        <div>\r\n    <br>\r\n            <label for=\"modelo\">Modelo</label>\r\n            <select id=\"modelo\" name=\"modelo\">\r\n                ");
                 EndContext();
                 BeginContext(1110, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51764be6a3064d1d9a807015db6c2524", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "161cdb17a7424f2a802f5637236b7efa", async() => {
                     BeginContext(1145, 9, true);
                     WriteLiteral("Selecione");
                     EndContext();
@@ -211,7 +211,7 @@ using Estacionamento.MVC.Models;
                 WriteLiteral("                    ");
                 EndContext();
                 BeginContext(1260, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4201a25f54d488eb7a162af1018d4bc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5545571214bf4af3ab9f656417c37013", async() => {
                     BeginContext(1292, 13, false);
 #line 46 "C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\Views\Registro\Index.cshtml"
                                               Write(modelo.Modelo);

@@ -43,5 +43,23 @@ namespace Estacionamento.MVC.Repositorio
             }
             return listaDeRegistros;
         }
+        public List<RegistroModel> Filtrar(string data){
+
+            DateTime dataConvertida = DateTime.Parse(data);
+            List<RegistroModel> listaDeRegistrosFiltrados = new List<RegistroModel>();
+            
+            var listaDeRegistros = Listar();
+
+            foreach (var item in listaDeRegistros)
+            {
+                if (item.DataDeEntrada.ToShortDateString() == dataConvertida.ToShortDateString())
+                {
+                    listaDeRegistrosFiltrados.Add(item);
+                }else{
+                    continue;
+                }
+            }
+            return listaDeRegistrosFiltrados;
+        }
     }
 }

@@ -30,3 +30,4 @@ C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionament
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Registro\Index.g.cshtml.cs
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Sucesso.g.cshtml.cs
 C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Listar\Index.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-menos-velhas\nova sprint\MVC\Estacionamento.MVC\obj\Debug\netcoreapp2.1\Razor\Views\Listar\FiltrarRegistros.g.cshtml.cs

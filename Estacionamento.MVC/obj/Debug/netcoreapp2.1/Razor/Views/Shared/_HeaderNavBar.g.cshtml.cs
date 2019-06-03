@@ -66,7 +66,7 @@ WriteAttributeValue("", 98, Url.Action("Index", "Registro"), 98, 32, false);
             WriteLiteral(">Cadastrar</a></li>\r\n                 <li>");
             EndContext();
             BeginContext(173, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e342e89351224fbbbfebe4b0e953c0ea", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37bdc6df182f478abb0a055b63d9e8fe", async() => {
                 BeginContext(237, 6, true);
                 WriteLiteral("Listar");
                 EndContext();
